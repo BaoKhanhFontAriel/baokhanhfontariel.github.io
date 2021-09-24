@@ -1,0 +1,184 @@
+html {
+  background: url(../src/background-powerpoint-dep-1536x864.jpg) no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Caramel-Regular;
+  src: url(../fonts/Caramel-Regular.ttf);
+}
+
+@keyframes change-color {
+  from {
+    background-color: aquamarine;
+  }
+  to {
+    background-color: coral;
+  }
+}
+
+.page-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: bold;
+  font-size: 50px;
+  animation: change-color 5s infinite reverse;
+}
+
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.navigation ul {
+  padding: 5px;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #93cf81;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation a {
+  display: block;
+  padding: 8px;
+}
+
+.homepage .margin {
+  margin: 30px;
+}
+
+.tittle-1.border {
+  border: 5px;
+  display: inline-block;
+  border-color: cornflowerblue;
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+  padding: 30px;
+}
+
+.tittle-2.border {
+  border: 12px solid indianred;
+  border-radius: 50px;
+  padding: 40px;
+  display: inline-block;
+}
+
+.homepage img {
+  float: left;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.homepage p {
+  position: relative;
+  left: 10px;
+}
+
+.homepage a:link,
+a:visited {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.homepage a:hover {
+  color: hotpink;
+}
+
+.box-shadow:hover {
+  box-shadow: 10px -10px 20px tomato, -10px 10px 20px tomato;
+}
+.facebook-share-icon img {
+  width: 10%;
+  height: 10%;
+  transition: width 2s;
+}
+
+.facebook-share-icon img:hover {
+  width: 50%;
+}
+.article h1 {
+  font-family: "Courier New", Courier, monospace;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #e2cb65;
+  border: 2px solid #af894c;
+}
+
+.article h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+blockquote {
+  background-color: darksalmon;
+  border-left-style: solid;
+  border-left-color: rgb(161, 103, 80);
+  border-left-width: 5px;
+  padding: 5px;
+}
+
+.article ul {
+  list-style: upper-latin outside;
+  background-color: rgb(89, 209, 139);
+  margin: 20px;
+  padding-inline-start: 30px;
+}
+
+.article li {
+  background-color: rgb(155, 238, 190);
+  padding: 5px;
+}
+.article a:link,
+a:visited {
+  color: rgb(69, 141, 209);
+  font-size: 40px;
+  padding: 10px;
+}
+
+.article a:hover {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  background-color: burlywood;
+  padding: 10px;
+}
+
+.article .other-link a:link,
+a:visited {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  border: none;
+  padding: none;
+}
+
+.article .other-link a:hover {
+  color: cornflowerblue !important;
+  background-color: white !important;
+}
+
+.text-shadow {
+  font-size: 24px;
+  color: rgb(224, 122, 199);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.font-Caramel-Regular {
+  font-size: 30px;
+  font-family: Caramel-Regular;
+}
