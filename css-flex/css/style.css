@@ -1,0 +1,10 @@
+.nav{
+    background-color: white;
+    display: flex;
+
+}
+
+.nav img {
+    width: 10px;
+    height: 10px;
+}
