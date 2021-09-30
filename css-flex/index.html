@@ -9,67 +9,593 @@
   </head>
   <body>
     <div class="container">
-      <nav>
-        <div class="reddit-logo">
+      <nav class="flex row justify-evenly align-center ">
+        <div class="reddit-logo icon-width-big flex row align-center ">
           <img src="image/Reddit-Logo.png" alt="reddit-logo" />
         </div>
-        <div class="subreddit-dropdown">
-          <div class="box">
-            <div class="subreddit-icon">
+        <div class="subreddit-dropdown hover-box-style">
+          <div class="dropdown-box flex row align-center gap-small padding">
+            <div class="subreddit-home-icon icon-width-small">
               <img src="image/home.png" alt="home" />
             </div>
-            <span>Home</span>
-            <div class="dropdown-icon">
+            <span class="font-size-medium">Home</span>
+            <div class="dropdown-icon icon-width-smaller flex align-right">
               <img
                 src="image/arrow-down-sign-to-navigate.png"
                 alt="dropdown-icon"
               />
             </div>
           </div>
-          <div class="content">
+          <!-- <div class="content">
             <div class="custom-feeds"></div>
             <div class="my-community">
               <span>MY COMMUNITY</span>
               <div></div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="search-box">
+        <div class="search-box icon-width-smaller flex row align-center gap-small fill-box-style padding">
+            <img src="image/search.png" alt="search-icon" />
           <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit">
-              <img src="image/search.png" alt="search-icon" />
-            </button>
+            <span>
+                <input class="input-style font-size-small" type="text" placeholder="Search Reddit" name="search" />
+            </span>
           </form>
         </div>
-        <div class="trending-box">
-          <img src="image/trending.png" alt="trending" />
-          <img src="image/bar-chart.png" alt="all" />
-          <img src="image/live-streaming.png" alt="streaming" />
-        </div>
-        <div class="personal-box">
-          <img src="image/chat.png" alt="chat" />
-          <img src="image/bell.png" alt="notification" />
-          <img src="image/add.png" alt="add" />
-          <div class="buy-coin"> 
-                <img src="image/coin.png" alt="coin">
-                <span>Free</span>
-          </div>
-          <div class="user-setting">
-              <img src="image/reddit_avatar.png" alt="reddit_avatar">
-              <div class="main-settings-box">
-                  <span>MomoPopo</span>
-                  <div class="karma">
-                      <img src="image/settings.png" alt="setting">
-                      <span>13,000 karma</span>
-                  </div>
+
+        <div class="shortcut-box flex row gap-medium align-center">
+            <div class="trending-box icon-width-smaller-medium gap-small icon-margin-small flex row">
+                <span class="square-grey-background  flex row align-center">
+                    <img src="image/trending.png" alt="trending" />
+                </span>
+                <span class="square-grey-background  flex row align-center">
+                    <img src="image/bar-chart.png" alt="all" />
+                </span>
+                <span class="square-grey-background  flex row align-center"> 
+                    <img src="image/live-streaming.png" alt="streaming" />
+                </span>
+
+             
               </div>
-              <img src="image/arrow-down-sign-to-navigate.png" alt="dropdown-icon">
-          </div>
+              <div class="personal-box icon-width-smaller-medium gap-small flex row align-center">
+                  <div class="chat flex row align-center gap-small icon-margin-small">
+                    <span class="square-grey-background  flex row align-center">
+                        <img src="image/chat.png" alt="chat" />
+                    </span>
+                    <span class="square-grey-background  flex row align-center">
+                        <img src="image/bell.png" alt="notification" />
+                    </span>
+                    <span class="square-grey-background  flex row align-center"> 
+                        <img src="image/add.png" alt="add" />
+                    </span>
+                  </div>
+                <div class="buy-coin gap-small flex align-center round-button-yellow font-size-small"> 
+                      <img src="image/coin.png" alt="coin">
+                      <span>Free</span>
+                </div>
+                <div class="user-setting flex row gap-small align-center hover-box-style padding">
+                    <span class="icon-width-small flex row align-center">
+                        <img src="image/reddit_avatar.png" alt="reddit_avatar">
+                    </span>
+                    <div class="main-settings-box icon-width-smaller flex column font-size-smaller">
+                        <span >MomoPopo</span>
+                        <div class="karma flex align-center ">
+                            <img src="image/settings.png" alt="setting">
+                            <span>13,000 karma</span>
+                        </div>
+                    </div>
+                    <div class="dropdown-icon icon-width-smaller align-right">
+                      <img
+                        src="image/arrow-down-sign-to-navigate.png"
+                        alt="dropdown-icon"
+                      />
+                </div>
+              </div>
         </div>
       </nav>
-      <main></main>
-      <aside></aside>
+      <main class="flex row justify-center align-start">
+          <div class="main-body">
+            <section class="action">
+                <div class="create-post-box post-layout icon-width-small flex row justify-evenly align-center gap-small icon-margin-small">
+                    <div class="icon-width-medium align-center">
+                        <img src="image/reddit_avatar.png" alt="avatar">
+                    </div>
+                    <form class = "create-post-input-box  fill-box-style padding" action="/action_page.php">
+                            <input class="input-style font-size-small" type="text" placeholder="Create Post" name="search" />
+                      </form>
+                      <span class="square-grey-background  flex row align-center">
+                        <img  src="image/image.png" alt="add image">
+                    </span>
+                    <span class="square-grey-background  flex row align-center">
+                        <img  src="image/link.png" alt="add link">
+                    </span>
+                </div>
+                <div class="trend-navigation post-layout flex row align-center gap-medium font-size-medium icon-width-smaller-medium">
+                    <span class="flex row align-center round-grey-background icon-margin-small">
+                        <img src="image/rocket-launch.png" alt="best-icon">
+                        <span>Best</span>
+                    </span>
+                    <span class="flex row align-center round-grey-background icon-margin-small ">
+                        <img src="image/trending.png" alt="hot-icon">
+                        <span>Hot</span>
+                    </span>
+                    <span class="flex row align-center round-grey-background icon-margin-small">
+                        <img src="image/new.png" alt="new-icon">
+                        <span>New</span>
+                    </span>
+                    <span class="flex row align-center round-grey-background icon-margin-small">
+                        <img src="image/bar-chart.png" alt="top-icon">
+                        <span>Top</span>
+                    </span>
+                    <span class="flex row align-center round-grey-background icon-margin-small icon-width-smaller">
+                        <img src="image/more.png" alt="more-icon">
+                    </span>
+                    <span class="flex row align-center round-grey-background icon-margin-small align-right">
+                        <span  class="flex row align-center">
+                            <img src="image/layout.png" alt="layout-icon">
+                        </span>
+                        <span class="flex row align-center icon-width-smaller">
+                            <img src="image/arrow-down-sign-to-navigate.png" alt="dropdown-icon">
+                        </span>
+                    </span>
+                </div>
+              </section>
+              <section class="posts">
+                  <div class="post-1 post-layout  flex row gap-small ">
+                        <div class="vote-action vote-section-layout icon-width-small ">
+                            <div class="vote-margin-small flex column font-size-small icon-margin-small">
+                                <span class="square-grey-background ">
+                                    <img src="image/upvote.png" alt="upvote">
+                                </span>
+                                <div>1.8k</div>
+                                <span class="square-grey-background ">
+                                    <img src="image/downvote.png" alt="downvote">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="post-body flex column gap-small post-body-background flex-grow">
+                            <div class="post-header flex row align-center gap-small font-size-small">
+                                <span class="subreddit-icon icon-width-small">
+                                    <img src="https://b.thumbs.redditmedia.com/LR_EEQDc0IqQeznV9_eAcU3EUMB5CPUE-I8FqwF7GQU.png">
+                                </span>
+                                <span class="subreddit-name">
+                                    r/marvelmemes 
+                                    <span class="font-size-big"> . </span>
+                                    Posted by 
+                                    <a href="#"> u/DGH1993 </a>
+                                    <a href="#">20 hours ago</a>
+                               </span>
+                            </div>
+                            <div class="post-title font-size-medium ">
+                                Gobble Gobble 
+                                <span class="round-corner-orange-background">
+                                    Movie
+                                </span>
+                            </div>
+                            <div class="post-image align-self-center">
+                                    <img src="https://preview.redd.it/ylflfcmaobq71.jpg?width=640&height=778&crop=smart&auto=webp&s=e5f64c5b592fd8e2f372e4351e16172347752c68"
+                                    style="max-height: 300px;">
+                            </div>
+                            <div class="post-action icon-width-small font-size-smaller flex row gap-small">
+                                <span class="comment flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/comment.png" alt="comment">
+                                    <span>47 comments</span>
+                                </span>
+                                <span class="award flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/gift.png" alt="gift">
+                                    <span>Award</span>
+                                </span>
+                                <span class="share flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/curve-arrow.png" alt="share">
+                                    <span>Share</span>
+                                </span>
+                                <span class="save flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/bookmark.png" alt="save">
+                                    <span>Save</span>
+                                </span>
+                                <span class="more flex row align-center gap-small icon-width-smaller square-grey-background icon-margin-small padding">
+                                    <img src="image/more.png" alt="more">
+                                </span>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="post-1 post-layout  flex row gap-small ">
+                    <div class="vote-action vote-section-layout icon-width-small ">
+                        <div class="vote-margin-small gap-small flex column font-size-small">
+                            <img src="image/upvote.png" alt="upvote">
+                            <div>1.8k</div>
+                            <img src="image/downvote.png" alt="downvote">
+                        </div>
+                    </div>
+                    <div class="post-body flex column gap-small post-body-background flex-grow">
+                        <div class="post-header flex row align-center gap-small font-size-small">
+                            <span class="subreddit-icon icon-width-small">
+                                <img src="https://a.thumbs.redditmedia.com/22q-LCt5exHO36cGYKILpqwRqnz9TqtrrY8qcz89ph8.png">
+                            </span>
+                            <span class="subreddit-name">
+                                r/raining 
+                                <span class="font-size-big"> . </span>
+                                Posted by 
+                                <a href="#"> u/aebleskiver1</a>
+                                <a href="#"> 15 hours ago</a>
+                           </span>
+                        </div>
+                        <div class="post-title font-size-medium ">
+                            first downpour of the autumn 
+                            <span class="round-corner-blue-background">
+                                Video
+                            </span>
+                        </div>
+                        <div class="post-image align-self-center">
+                                <video width="300" height="240" autoplay muted loop controls>
+                                    <source src="image/first downpour of the autumn.mp4">
+                                </video>
+                        </div>
+                        <div class="post-action icon-width-small font-size-smaller flex row gap-small">
+                            <span class="comment flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/comment.png" alt="comment">
+                                <span>66 comments</span>
+                            </span>
+                            <span class="award flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/gift.png" alt="gift">
+                                <span>Award</span>
+                            </span>
+                            <span class="share flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/curve-arrow.png" alt="share">
+                                <span>Share</span>
+                            </span>
+                            <span class="save flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/bookmark.png" alt="save">
+                                <span>Save</span>
+                            </span>
+                            <span class="more flex row align-center gap-small icon-width-smaller square-grey-background icon-margin-small padding">
+                                <img src="image/more.png" alt="more">
+                            </span>
+                        </div>
+                    </div>
+              </div>
+              <div class="post-1 post-layout  flex row gap-small ">
+                <div class="vote-action vote-section-layout icon-width-small ">
+                    <div class="vote-margin-small flex column font-size-small icon-margin-small">
+                        <span class="square-grey-background ">
+                            <img src="image/upvote.png" alt="upvote">
+                        </span>
+                        <div>4.8k</div>
+                        <span class="square-grey-background ">
+                            <img src="image/downvote.png" alt="downvote">
+                        </span>
+                    </div>
+                </div>
+                <div class="post-body flex column gap-small post-body-background flex-grow">
+                    <div class="post-header flex row align-center gap-small font-size-small">
+                        <span class="subreddit-icon icon-width-small">
+                            <img src="https://b.thumbs.redditmedia.com/LR_EEQDc0IqQeznV9_eAcU3EUMB5CPUE-I8FqwF7GQU.png">
+                        </span>
+                        <span class="subreddit-name">
+                            r/trippinthroughtime
+                            <span class="font-size-big"> . </span>
+                            Posted by 
+                            <a href="#"> byu/Bmchris44 </a>
+                            <a href="#">1 day ago</a>
+                       </span>
+                    </div>
+                    <div class="post-title font-size-medium ">
+                        Is this the darkest timeline
+                    </div>
+                    <div class="post-image align-self-center">
+                            <img src="https://external-preview.redd.it/7Fw3NGxcTnJF3_Jm6T5oFaPyGcLhMtWsoSyXzEAJ6a8.png?width=640&height=804&crop=smart&auto=webp&s=427882c60b53c78641781ffef24aca8bd018dc15"
+                            style="max-height: 300px;">
+                    </div>
+                    <div class="post-action icon-width-small font-size-smaller flex row gap-small">
+                        <span class="comment flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/comment.png" alt="comment">
+                            <span>35 comments</span>
+                        </span>
+                        <span class="award flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/gift.png" alt="gift">
+                            <span>Award</span>
+                        </span>
+                        <span class="share flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/curve-arrow.png" alt="share">
+                            <span>Share</span>
+                        </span>
+                        <span class="save flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/bookmark.png" alt="save">
+                            <span>Save</span>
+                        </span>
+                        <span class="more flex row align-center gap-small icon-width-smaller square-grey-background icon-margin-small padding">
+                            <img src="image/more.png" alt="more">
+                        </span>
+                    </div>
+                </div>
+          </div>
+          <div class="post-1 post-layout  flex row gap-small ">
+            <div class="vote-action vote-section-layout icon-width-small ">
+                <div class="vote-margin-small flex column font-size-small icon-margin-small">
+                    <span class="square-grey-background ">
+                        <img src="image/upvote.png" alt="upvote">
+                    </span>
+                    <div>8.9k</div>
+                    <span class="square-grey-background ">
+                        <img src="image/downvote.png" alt="downvote">
+                    </span>
+                </div>
+            </div>
+                        <div class="post-body flex column gap-small post-body-background flex-grow">
+                            <div class="post-header flex row align-center gap-small font-size-small">
+                                <span class="subreddit-icon icon-width-small">
+                                    <img src="https://b.thumbs.redditmedia.com/LR_EEQDc0IqQeznV9_eAcU3EUMB5CPUE-I8FqwF7GQU.png">
+                                </span>
+                                <span class="subreddit-name">
+                                    r/trippingthroughtimes 
+                                    <span class="font-size-big"> . </span>
+                                    Posted by 
+                                    <a href="#"> u/MiyabiAyoama
+                                        1 day ago</a>
+                                    <a href="#">1 day ago</a>
+                               </span>
+                            </div>
+                            <div class="post-title font-size-medium ">
+                                A Solid Plan!
+                            </div>
+                            <div class="post-image align-self-center">
+                                    <img src="https://external-preview.redd.it/MFG9sS2YbubWU3B7j0V5lQaFUXZSaE0IqGRpKp7lYdY.jpg?width=640&height=1082&crop=smart&auto=webp&s=bda2a114aa32df5e55a3f6acfc2f6f4b65367958"
+                                    style="max-height: 300px;">
+                            </div>
+                            <div class="post-action icon-width-small font-size-smaller flex row gap-small">
+                                <span class="comment flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/comment.png" alt="comment">
+                                    <span>47 comments</span>
+                                </span>
+                                <span class="award flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/gift.png" alt="gift">
+                                    <span>Award</span>
+                                </span>
+                                <span class="share flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/curve-arrow.png" alt="share">
+                                    <span>Share</span>
+                                </span>
+                                <span class="save flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                    <img src="image/bookmark.png" alt="save">
+                                    <span>Save</span>
+                                </span>
+                                <span class="more flex row align-center gap-small icon-width-smaller square-grey-background icon-margin-small padding">
+                                    <img src="image/more.png" alt="more">
+                                </span>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="post-1 post-layout  flex row gap-small ">
+                    <div class="vote-action vote-section-layout icon-width-small ">
+                        <div class="vote-margin-small flex column font-size-small icon-margin-small">
+                            <span class="square-grey-background ">
+                                <img src="image/upvote.png" alt="upvote">
+                            </span>
+                            <div>280</div>
+                            <span class="square-grey-background ">
+                                <img src="image/downvote.png" alt="downvote">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-body flex column gap-small post-body-background flex-grow">
+                        <div class="post-header flex row align-center gap-small font-size-small">
+                            <span class="subreddit-icon icon-width-small">
+                                <img src="https://styles.redditmedia.com/t5_2ss14/styles/communityIcon_zv9v9u8384271.png">
+                            </span>
+                            <span class="subreddit-name">
+                                r/theocho
+                                <span class="font-size-big"> . </span>
+                                Posted by 
+                                <a href="#"> u/Dynosoarz
+                                     </a>
+                                <a href="#">22 hours ago</a>
+                           </span>
+                        </div>
+                        <div class="post-title font-size-medium ">
+                            Lindybeige - A history of and my first go at MEDIEVAL TENNIS 
+                            <span class="round-corner-blue-text">
+                                MEDIEVAL
+                            </span>
+                        </div>
+                        <div class="post-image align-self-center">
+                            <iframe width="300" height="200" src="https://www.youtube.com/embed/GmNxwYtzoy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
+                            
+                        </div>
+                        <div class="post-action icon-width-small font-size-smaller flex row gap-small">
+                            <span class="comment flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/comment.png" alt="comment">
+                                <span>47 comments</span>
+                            </span>
+                            <span class="award flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/gift.png" alt="gift">
+                                <span>Award</span>
+                            </span>
+                            <span class="share flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/curve-arrow.png" alt="share">
+                                <span>Share</span>
+                            </span>
+                            <span class="save flex row align-center gap-small square-grey-background icon-margin-small padding">
+                                <img src="image/bookmark.png" alt="save">
+                                <span>Save</span>
+                            </span>
+                            <span class="more flex row align-center gap-small icon-width-smaller square-grey-background icon-margin-small padding">
+                                <img src="image/more.png" alt="more">
+                            </span>
+                        </div>
+                    </div>
+              </div>
+              <div class="post-1 post-layout  flex row gap-small ">
+                <div class="vote-action vote-section-layout icon-width-small ">
+                    <div class="vote-margin-small flex column font-size-small icon-margin-small">
+                        <span class="square-grey-background ">
+                            <img src="image/upvote.png" alt="upvote">
+                        </span>
+                        <div>3.2k</div>
+                        <span class="square-grey-background ">
+                            <img src="image/downvote.png" alt="downvote">
+                        </span>
+                    </div>
+                </div>
+                <div class="post-body flex column gap-small post-body-background flex-grow">
+                    <div class="post-header flex row align-center gap-small font-size-small">
+                        <span class="subreddit-icon icon-width-small">
+                            <img src="https://a.thumbs.redditmedia.com/KZESzgF91cP3KEAR29JhCFmX0zxsPgY1sYhv7XCtiW0.png">
+                        </span>
+                        <span class="subreddit-name">
+                            r/notdisneyvacation
+                            <span class="font-size-big"> . </span>
+                            Posted by 
+                            <a href="#"> u/ltlouche </a>
+                            <a href="#">1 day ago </a>
+                       </span>
+                    </div>
+                    <div class="post-title font-size-medium ">
+                        How to Make a Monkey Costume
+                    </div>
+                    <div class="post-image align-self-center">
+                            <img src="https://preview.redd.it/3bklb8a2xtp71.jpg?width=640&crop=smart&auto=webp&s=8ed886c3c31b5e99afdf063bcb9594093e9ac3bb"
+                            style="max-height: 300px; width: 300px;">
+                    </div>
+                    <div class="post-action icon-width-small font-size-smaller flex row gap-small">
+                        <span class="comment flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/comment.png" alt="comment">
+                            <span>13 comments</span>
+                        </span>
+                        <span class="award flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/gift.png" alt="gift">
+                            <span>Award</span>
+                        </span>
+                        <span class="share flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/curve-arrow.png" alt="share">
+                            <span>Share</span>
+                        </span>
+                        <span class="save flex row align-center gap-small square-grey-background icon-margin-small padding">
+                            <img src="image/bookmark.png" alt="save">
+                            <span>Save</span>
+                        </span>
+                        <span class="more flex row align-center gap-small icon-width-smaller square-grey-background icon-margin-small padding">
+                            <img src="image/more.png" alt="more">
+                        </span>
+                    </div>
+                </div>
+          </div>
+              </section>
+          </div>
+          <aside class="flex column flex-basis flex column">
+                <div class="top-community post-layout font-size-medium flex column icon-width-medium gap-medium"> 
+                    <div class="community-thumbnail flex column">
+                        <div class="banner-background-image">
+                            <img src="https://styles.redditmedia.com/t5_2qixk/styles/bannerBackgroundImage_d55rwvwhoyd71.png" alt="bannerBackGroundImage">
+                        </div>
+                        <span class="offset-margin white-text font-size-big">Top Sports Communities</span>
+                    </div>
+                    <div class="top-list flex column gap-small"> 
+                        <div class="item flex row align-center gap-small   ">
+                            <span>1</span>
+                            <span><img src="https://styles.redditmedia.com/t5_2qxh7/styles/communityIcon_nbzgv367wcn31.PNG" alt=""
+                               ></span>
+                            <span>r/MMA</span>
+                            <span class="round-corner-blue-background flex align-right">Join</span>
+                        </div>
+                        <div class="item flex row align-center gap-small ">
+                            <span>2</span>
+                            <span><img src="https://styles.redditmedia.com/t5_2qj0l/styles/communityIcon_rzpc52z4g2q71.jpeg?format=pjpg&s=428eec0d074ea81af636d6a3d67cd909981104e3" alt=""
+                               ></span>
+                            <span>r/FIFA</span>
+                            <span class="round-corner-blue-background flex align-right">Join</span>
+                        </div>
+                        <div class="item flex row align-center gap-small">
+                            <span>3</span>
+                            <span><img src="https://styles.redditmedia.com/t5_2qo4s/styles/communityIcon_1podsfdai4301.png" alt=""
+                               ></span>
+                            <span>r/Boxing</span>
+                            <span class="round-corner-blue-background align-right">Join</span>
+                        </div>
+                        <div class="item flex row align-center gap-small">
+                            <span>4</span>
+                            <span><img src="https://a.thumbs.redditmedia.com/OT_3LiWYRmrHg-clwjXQN84qauGtBNRPJykzA2GA648.png" alt=""
+                               ></span>
+                            <span>r/nba</span>
+                            <span class="round-corner-blue-background align-right">Join</span>
+                        </div>
+                    </div>
+                    <span class="view-all round-corner-blue-background big-button-layout">View all</span>
+                    <div class="subreddit-suggestion font-size-small">
+                        <span class="round-corner-blue-text">Top</span>
+                        <span class="round-corner-blue-text">Near You</span>
+                        <span class="round-corner-blue-text">Aww</span>
+                        <span class="round-corner-blue-text">Gaming</span>
+                    </div>
+                </div>
+                <div class="reddit-premium post-layout gap-small flex column">
+                    <div class="icon-width-medium flex row gap-small font-size-medium">
+                        <span><img src="image/shield.png" alt="shield"></span>
+                        <span class="flex column gap-small">
+                            <div>Reddit Premium</div>
+                            <div>The best Reddit experience, with monthly Coins</div>
+                        </span>
+                    </div>
+                    <div class="round-corner-orange-background big-button-layout font-size-medium">
+                        Try Now
+                    </div>
+                </div>
+                <div class="home-sidebar post-layout flex column gap-small">
+                    <div class="background-home-side-bar">
+                        <img src="https://www.redditstatic.com/desktop2x/img/id-cards/home-banner@2x.png" alt="" 
+                        style="max-height: 30px; max-width: 158px;">
+                    </div>
+                    <div class="icon-width-medium offset-margin flex align-center gap-small font-size-medium">
+                        <span><img src="https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png" alt=""></span>
+                        <span >Home</span>
+                    </div>
+                    <div class="font-size-medium">Your personal Reddit frontpage. Come here to check in with your favorite communities.</div>
+                    <div class="big-button-layout round-corner-blue-background font-size-medium">
+                        Creat Post
+                    </div>
+                    <div class="big-button-layout round-corner-text-blue font-size-medium">
+                        Creat Community
+                    </div>
+                </div>
+                <div class="contact flex column font-size-small post-layout gap-small align-start">
+                    <div class="right-cloumn flex row justify-start gap-big">
+                        <div >
+                            <ul>
+                                <li>Help</li>
+                               <li>Reddit coins</li> 
+                                <li>
+                                    Reddit premium
+                                </li>
+                                <li>
+                                    Reddit gifts
+                                </li>
+                                <li>
+                                    Communities
+                                </li>
+                                <li>Rereddit</li>
+                                <li>Topics</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>                            <li>About</li> 
+                                <li>careers</li> 
+                                <li>press</li>
+                                <li>advertise</li>
+                                <li>blog</li>
+                                <li>Terms</li>
+                                <li>Content policy</li>
+                                <li>Privacy policy</li>
+                                <li>Mod policy</li>
+                            </ul>
+
+                         </div>
+
+                    </div>
+                    <div>
+                        Reddit Inc © 2021 . All rights reserved
+                    </div>
+                </div>
+          </aside>
+      </main>
     </div>
   </body>
 </html>
