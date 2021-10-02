@@ -1,151 +1,478 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy-Light;
 }
 
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(font/Gilroy-FREE/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(font/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+
+
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-left: 2px;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  white-space: 5px;
 }
 
 .flex {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .nowrap {
-    flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .justify-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
-.jusityf-end {
-    justify-content: flex-end;
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .align-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .align-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .align-stretch {
-    align-items: stretch;
+  align-items: stretch;
 }
 
 .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: -6px;
-    margin-right: -6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
 }
 
 .col-1 {
-    flex-basis: 8.333333%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 8.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-2 {
-    flex-basis: 16.666667%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 16.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-3 {
-    flex-basis: 25%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 25%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-4 {
-    flex-basis: 33.333333%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 33.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-5 {
-    flex-basis: 41.666667%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 41.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-6 {
-    flex-basis: 50%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 50%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-7 {
-    flex-basis: 58.333333%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 58.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-8 {
-    flex-basis: 66.666667%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 66.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-9 {
-    flex-basis: 75%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 75%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-10 {
-    flex-basis: 83.333333%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 83.333333%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-11 {
-    flex-basis: 91.666667%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 91.666667%;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .col-12 {
-    flex-basis: 100%;
-    padding-left: 6px;
-    padding-right: 6px;
+  flex-basis: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.font-size-14px {
+  font: 14px;
+}
+
+.font-size-16px {
+  font: 16px;
+}
+
+.font-size-30px {
+  font-size: 30px;
+}
+
+.img-width-100px {
+  width: 100px;
+}
+
+.font-size-20px {
+  font-size: 20px;
+}
+
+.img-width-25px {
+  width: 25px;
+}
+
+.img-width-15px {
+  width: 15px;
+}
+
+.img-width-10px {
+  width: 10px;
+}
+
+.img-width-5px {
+  width: 5px;
+}
+
+.page-name {
+    font-size: 28px;
+}
+
+.header-logo{
+    margin-left: -12px;
+}
+
+.button-style {
+  border: none;
+  background-color: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+}
+
+.follow-button {
+  font-size: 14px;
+}
+
+.follow-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.featured-article {
+  background-color: #101010;
+  flex-basis: 23%;
+  flex-shrink: 1;
+  height: 420px;
+}
+
+.featured-article:hover{
+    text-decoration: underline;
+    background-image: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010 80%),
+}
+
+.featured-article .title {
+  color: rgb(255, 255, 255);
+}
+
+.white-text-blue-background {
+  padding: 4px 8px;
+  color: white;
+  background-color: #157bda;
+}
+
+.featured-articles {
+  background-color: #101010;
+  padding: 40px;
+}
+
+
+.checkbox-list li{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.checkbox-list li input{
+    margin-right: 10px;
+}
+
+.checkbox-actions .button{
+    width: 48%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.checkbox-list li:hover{
+    background-color: rgba(197, 197, 197, 0.219);
+}
+
+.text-bold{
+    font-family: Gilroy-ExtraBold;
+}
+
+
+.featured-article.item-1 {
+  padding: 10px;
+  background-image: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010 80%),
+    url(https://static1.anpoimages.com/wordpress/wp-content/uploads/2019/09/Jabra-Elite-75t-1-668x445.jpg?q=50&fit=crop&w=290&h=420&dpr=1.5);
+  background-size: cover;
+}
+
+.featured-article.item-2 {
+  padding: 10px;
+  background-image: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010 80%),
+    url(https://static1.anpoimages.com/wordpress/wp-content/uploads/2020/01/sim-card-bad-evil-hero.png?q=50&fit=crop&w=290&h=420&dpr=1.5);
+  background-size: cover;
+}
+
+.featured-article.item-3 {
+  padding: 10px;
+  background-image: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010 80%),
+    url(https://static1.anpoimages.com/wordpress/wp-content/uploads/2021/10/satechi-100w-gan-usb-c-charger.png?q=50&fit=crop&w=290&h=420&dpr=1.5);
+  background-size: cover;
+}
+
+.featured-article.item-4 {
+  padding: 10px;
+  background-image: linear-gradient(180deg, rgba(16, 16, 16, 0), #101010 80%),
+    url(https://static1.anpoimages.com/wordpress/wp-content/uploads/2021/09/EcoFlow-DELTA-Max-1.png?q=50&fit=crop&w=290&h=420&dpr=1.5);
+  background-size: cover;
+}
+
+.featured-comment {
+
+  width: 50px;
+}
+
+.featured-title {
+  color: white;
+  margin-top: auto;
+}
+
+.featured-title p {
+    font-family: Gilroy-ExtraBold;
+}
+
+.font-size-26px {
+  font-size: 26px;
+}
+
+.white-text {
+  color: white;
+}
+main {
+  margin-top: 40px;
+}
+
+aside {
+  padding: 0px 20px 0 20px !important;
+}
+
+.sider-post-layout {
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+
+}
+
+.sider-post-title {
+    font-family: Gilroy-ExtraBold;
+  color: white;
+  background-color: #101010;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:6px 0 6px 0
+}
+
+.sider-post-content {
+  padding: 0 20px 0 20px;
+}
+
+.sider-post-content > *{
+    margin-bottom: 20px;
+}
+
+.pink-button {
+  border: none;
+  background-color: #e01a4f;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.input-email{
+    border: none;
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    padding: 10px;
+
+}
+.input-email:focus{
+    outline: none;
+}
+
+.trending-article{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.trending-article .image-title{
+margin-left: 10px;
+}
+
+
+.newletter-content{
+    font-size: 18px;
+}
+
+.main-body .body-header{
+    font-family: Gilroy-ExtraBold;
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 4px solid #e01a4f;
+}
+
+.main-body{
+    padding-right: 40px;
+}
+
+.article-list{
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.author-avatar{
+    width: 40px;
+}
+
+.article{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.466);
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.article-info{
+    width:300px;
+    margin-left: 10px;
+}
+
+.article-author{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.article-author > *{
+    margin-right: 5px;
+}
+
+.posting-time{
+    color: rgba(128, 128, 128, 0.699);
+}
+
+.preview-content{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.author-comment{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    border-left: 6px solid #157bda;
+    padding-left: 8px;
+    font-weight: 700;
+}
+
+
+.item-button img{
+    width: 10px;
+}
+
+.help-icons img{
+    width:20px;
+}
+
+.article-title{
+    font-family: Gilroy-ExtraBold;
 }
