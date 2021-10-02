@@ -275,7 +275,7 @@ ul {
 }
 
 .checkbox-list li:hover{
-    background-color: rgba(197, 197, 197, 0.219);
+    background-color: rgb(255, 255, 255);
 }
 
 .text-bold{
