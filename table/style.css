@@ -1,0 +1,346 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.jusityf-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+body{
+    background-color: #f0f2f5;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.col-1 {
+    flex-basis: 8.333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-2 {
+    flex-basis: 16.666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-4 {
+    flex-basis: 33.333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-5 {
+    flex-basis: 41.666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-7 {
+    flex-basis: 58.333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-8 {
+    flex-basis: 66.666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-9 {
+    flex-basis: 75%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-10 {
+    flex-basis: 83.333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-11 {
+    flex-basis: 91.666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+main{
+    height: 100vh;
+}
+
+.facebook-name{
+    font-size: 64px;
+    font-weight: bolder;
+    color: #1676f3;
+}
+
+.facebook-purpose{
+    font-size: 24px;
+}
+
+.box-form-deco{
+    border: 1px solid rgba(128, 128, 128, 0.178);
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgba(128, 128, 128, 0.24);
+    width: 76%;
+    font-size: large;
+    background-color: #f4f8ff;
+}
+
+.login-box .email-form{
+    margin: 30px 20px 11px 20px;
+}
+
+.login-box form {
+    margin: 20px;
+}
+
+.login-box form input{
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    border-radius: 10px;
+    /* border: none; */
+    padding: 16px;
+    background-color: inherit;
+    color: grey;
+}
+
+
+
+.login-button input{
+    border: none !important;
+    background-color: #1676f3 !important;
+    color: white !important;
+    font-weight: bolder;
+}
+
+.password-forget a {
+    text-decoration: none;
+    color: #1676f3;
+    margin-bottom: 30px;
+}
+
+.password-forget{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-new-account{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.create-new-account-button{
+
+    color: white !important;
+    font-weight: bold;
+    border: none;
+    background: #3cb423;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.facebook-tip{
+    margin-top: 20px;
+}
+
+.popup-box {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.popup-box:target {
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    background: rgba(128, 128, 128, 0.178);
+    transition: opacity 500ms;
+}
+
+.popup-content {
+    width: 500px;
+    padding: 20px;
+    font-size: 22px;
+    position: relative;
+}
+
+.popup-form .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.close-button{
+    width: 20px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.popup-content input, select, label{
+    font-size: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    border-radius: 5px;
+    /* border: none; */
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.096);
+    color: grey;
+}
+
+.popup-form > *{
+    margin-bottom: 15px;
+}
+.name-form input{
+    width: 49%;
+}
+
+.birthday-form select{
+    width: 32%;
+}
+
+.gender-form-group label{
+    width: 32%;
+}
+.gender-form-group label input{
+    margin-left: auto;
+}
+
+.sign-up input{
+    width: 50%;
+    color: white !important;
+    font-weight: bold;
+    border: none;
+    background: #3cb423;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.terms{
+    font-size: 14px;
+}
+
+.popup-note{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.356);
+}
+
+.sign-up{
+    margin-bottom: 0px;
+}
+
+.sign-up input{
+    font-size: 22px;
+}
+.password-form input, .email-form input{
+    width: 100%;
+}
+
+input:invalid{
+    border: 2px solid tomato;
+}
+
+input:focus{
+    border: 0.5px solid #1474f4;
+}
