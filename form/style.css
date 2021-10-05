@@ -349,3 +349,7 @@ input:invalid{
 input:focus{
     border: 0.5px solid #1474f4;
 }
+
+.form > *{
+    margin-bottom: 20px;
+}

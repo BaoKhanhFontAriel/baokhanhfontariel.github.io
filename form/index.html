@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100% Legit Facebook Login</title>
-    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/768px-Facebook-icon-1.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/768px-Facebook-icon-1.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -46,8 +50,8 @@
 
                 <form
                   class="password-form row justify-center"
-                  action=""
-                  method="post"
+                  action="caution.html"
+                  method="GET"
                 >
                   <input
                     type="password"
@@ -56,10 +60,10 @@
                     placeholder="Mật khẩu"
                     required
                   />
-                </form>
 
-                <form class="login-button row justify-center" action="">
-                  <input type="submit" value="Đăng nhập" id="login" />
+                  <div class="login-button row justify-center" action="">
+                    <input type="submit" value="Đăng nhập" id="login" />
+                  </div>
                 </form>
 
                 <div class="password-forget row justify-center">
@@ -93,115 +97,134 @@
             <div class="popup-content box-form-deco">
               <div class="close-button">
                 <a href="#">
-                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt=""close>  
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
+                    alt=""
+                    close
+                  />
                 </a>
               </div>
               <div class="popup-form">
                 <div class="popup-header">
-                    <div class="popup-title">
-                        <h2>Đăng ký</h2>
-                      </div>
-                      <div class="popup-note">
-                        <p>Nhanh chóng và dễ ràng</p>
-                      </div>
-                </div>
-
-                <form class="name-form row justify-between" action="" method="POST">
-                  <input type="text" name="first-name" placeholder="Họ" required/>
-                  <input type="text" name="last-name" placeholder="Tên" required/>
-                </form>
-
-                <form action="" class="email-form">
-                  <input
-                    type="tel email"
-                    id="number-email"
-                    name="number-email"
-                    placeholder="Di động hoặc email"
-                    required
-                  />
-                </form>
-                <form action="" class="password-form">
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Mật khẩu mới"
-                    required
-                  />
-                </form>
-                <div class="date-of-birth-form">
-                  <div class="birthday-text">
-                    <p>Năm sinh</p>
+                  <div class="popup-title">
+                    <h2>Đăng ký</h2>
                   </div>
-                  <div class="birthday-form ">
-                    <form action="" class="day-form row justify-between">
-                      <select id="day" name="day">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                      </select>
-                  
-                      <select id="month" name="month">
-                        <option selected>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                        <option>July</option>
-                        <option>August</option>
-                        <option>September</option>
-                        <option>October</option>
-                        <option>November</option>
-                        <option>December</option>
-                      </select>
-                  
-                      <select name="year" id="year">
-                        <option value="1995">1995</option>
-                        <option value="1996">1996</option>
-                        <option value="1997">1997</option>
-                        <option value="1998">1998</option>
-                        <option value="1999">1999</option>
-                        <option value="2000">2000</option>
-                      </select>
-                    </form>
+                  <div class="popup-note">
+                    <p>Nhanh chóng và dễ ràng</p>
                   </div>
                 </div>
-                <div class="gender-form">
+
+                <form
+                  class="form column justify-between"
+                  action="caution.html"
+                  method="GET"
+                >
+                  <div class="name-form row justify-between">
+                    <input
+                      type="text"
+                      name="first-name"
+                      placeholder="Họ"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="last-name"
+                      placeholder="Tên"
+                      required
+                    />
+                  </div>
+
+                  <div class="email-form">
+                    <input
+                      type="tel email"
+                      id="number-email"
+                      name="number-email"
+                      placeholder="Di động hoặc email"
+                      required
+                    />
+                  </div>
+                  <div class="password-form">
+                    <input
+                      type="password"
+                      name="password"
+                      placeholder="Mật khẩu mới"
+                      required
+                    />
+                  </div>
+                  <div class="date-of-birth-form">
+                    <div class="birthday-text">
+                      <p>Năm sinh</p>
+                    </div>
+                    <div class="birthday-form">
+                      <div action="" class="day-form row justify-between">
+                        <select id="day" name="day">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="31">31</option>
+                        </select>
+
+                        <select id="month" name="month">
+                          <option selected>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option>May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>November</option>
+                          <option>December</option>
+                        </select>
+
+                        <select name="year" id="year">
+                          <option value="1995">1995</option>
+                          <option value="1996">1996</option>
+                          <option value="1997">1997</option>
+                          <option value="1998">1998</option>
+                          <option value="1999">1999</option>
+                          <option value="2000">2000</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gender-form">
                     <div class="gender-text">
                       <p>Giới tính</p>
                     </div>
                     <div class="gender-form-group">
-                      <form action="" class="sex-form row justify-between">
+                      <div action="" class="sex-form row justify-between">
                         <label for="female" class="row justify-between">
-                            Nữ
+                          Nữ
                           <input
                             type="radio"
                             name="radio"
@@ -227,24 +250,24 @@
                             value="other"
                           />
                         </label>
-                      </form>
+                      </div>
                     </div>
-                </div>    
-                    <div class="terms">
-                      Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản,
-                      Chính sách dữ liệu và Chính sách cookie của chúng tôi. Bạn
-                      có thể nhận được thông báo của chúng tôi qua SMS và hủy
-                      nhận bất kỳ lúc nào.
-                    </div>
-                    <div class="sign-up row justify-center">
-                      <input
-                        type="submit"
-                        id="sign-up"
-                        name="sign-up"
-                        value="Đăng ký"
-                      />
-                    </div>
-                </div>
+                  </div>
+                  <div class="terms">
+                    Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính
+                    sách dữ liệu và Chính sách cookie của chúng tôi. Bạn có thể
+                    nhận được thông báo của chúng tôi qua SMS và hủy nhận bất kỳ
+                    lúc nào.
+                  </div>
+                  <div class="sign-up row justify-center">
+                    <input
+                      type="submit"
+                      id="sign-up"
+                      name="sign-up"
+                      value="Đăng ký"
+                    />
+                  </div>
+                </form>
               </div>
             </div>
           </div>

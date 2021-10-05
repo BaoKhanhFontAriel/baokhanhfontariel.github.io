@@ -343,4 +343,6 @@ select{
     margin-top: 20px;
 }
 
-
+.form > *{
+    margin-bottom: 5px;
+}
