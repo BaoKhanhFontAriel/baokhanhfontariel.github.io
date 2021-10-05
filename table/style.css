@@ -325,8 +325,9 @@ tbody td:nth-child(2){
 }
 
 tfoot td:nth-child(n) > *{
+    display: block;
     text-align: center;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 }
 
 select{
@@ -341,3 +342,5 @@ select{
 .product-comparison .section-header{
     margin-top: 20px;
 }
+
+
