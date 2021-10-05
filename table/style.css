@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 img {
@@ -38,8 +39,12 @@ ul {
     justify-content: center;
 }
 
-.jusityf-end {
+.justify-end {
     justify-content: flex-end;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 .justify-between {
@@ -63,11 +68,9 @@ ul {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .row {
@@ -148,4 +151,193 @@ ul {
     flex-basis: 100%;
     padding-left: 6px;
     padding-right: 6px;
+}
+
+.useful-menu-items{
+    width: 100%;
+}
+
+.useful-menu-items li{
+    padding: 16px;
+}
+
+.useful-menu-items button{
+    color: teal;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.useful-menu-items li:hover{
+    background-color: rgba(128, 128, 128, 0.356);
+}
+
+.nav-menu-items{
+    width: 100%;
+}
+
+.nav-menu-items li{
+    padding: 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu-items button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav-menu-items li:hover{
+border-bottom: 2px solid teal;
+}
+
+nav{
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+}
+.introduction-paragraph{
+    padding-left: 50px;
+}
+
+.introduction-content li{
+    list-style: none;
+    font-size: 14px;
+}
+
+.introduction-content li::before{
+    content: "\2022";
+    font-weight: bolder; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: .1em; /* Also needed for space (tweak if needed) */
+    color: red;
+}
+
+
+.font-red{
+    color: red;
+}
+
+.font-14{
+    font-size: 14px !important;
+}
+.font-22{
+    font-size: 22px !important;
+}
+
+.font-18{
+    font-size: 18px !important;
+}
+
+
+.font-30{
+    font-size: 30px !important;
+}
+
+
+.default-flex-basis{
+    width: 1200px;
+}
+
+.price-option-box{
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    border-radius: 5px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.price-option-box > *{
+    margin: 15px;
+}
+
+.full-width-red-button{
+    width: 100%;
+    background-color: red;
+    color: white;
+    border:none;
+    padding:5px;
+}
+
+.full-width-green-text-button{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-color:teal;
+    color: teal;
+    padding:5px;
+}
+
+.product-marketing{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+    padding-bottom: 20px;
+}
+
+.product-marketing > *{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-introduction-content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.introduction-paragraph >*{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+table{
+    margin-top: -70px;
+    font-family: inherit;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    /* border: 1px solid teal; */
+
+}
+
+tbody tr{
+    border-top: 1px solid teal;
+    border-bottom: 1px solid teal;
+}
+
+tbody tr:hover{
+    background-color: rgba(64, 224, 208, 0.116);
+}
+
+.section-header{
+    margin-right: 100px;
+}
+
+thead tr:nth-child(n){
+    text-align: center;
+}
+
+tbody tr:nth-child(n){
+    text-align: center;
+}
+
+tbody td:nth-child(2){
+    text-align: left;
+}
+
+tfoot td:nth-child(n) > *{
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+select{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.11);
+    background-color: transparent;
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+.product-comparison .section-header{
+    margin-top: 20px;
 }
