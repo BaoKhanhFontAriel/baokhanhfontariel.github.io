@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        .edit-btn{
+            position: absolute;
+            right: 10%;
+        }
+        body {
+            font-family: 'Lato';
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 overflow-hidden">
+        <div class="header">
+            <div class="row justify-content-center">
+                <div class="col-4 fw-bolder"> 
+                    <h1>Simple Todo App</h1>
+                </div>
+            </div>
+        </div>
+    
+        <main>
+            <section class="form-section">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                            <form class="todo-form input-group input-group-sm mb-4 mt-4" id="todo-form">
+                                <input class=" form-control px-3 py-2 bg-body rounded me-2 fs-6" name="todo-input" type="text" placeholder="Add new todo" ></input>
+                                <button type="submit" class="btn btn-primary rounded-2 px-3 fs-6" name = "add-button" value="add">Add</button>
+                            </form>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <form class="update-form input-group input-group-sm mb-4 mt-4" id="update-form" style="display: none;">
+                            <!-- <input class=" form-control px-3 py-2 bg-body rounded me-2 fs-6" name="update-input" type="text" ></input>
+                            <button type="submit" class="btn btn-primary rounded-2 px-3 fs-6" name = "update-button"  value="update">
+                                <i class="bi bi-check2"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger rounded-2 px-3 fs-6" value="cancle" name = "cancel-button" >
+                                <i class="bi bi-x"></i>
+                            </button> -->
+                        </form>
+                    </div>
+                </div>
+            </section> 
+    
+            <section class="todo-list mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <ul class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row justify-content-center ">
+                    <div class="count-class col-4 d-flex align-items-center justify-content-end">
+
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
