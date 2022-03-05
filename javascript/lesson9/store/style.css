@@ -1,0 +1,36 @@
+:root {
+  --background-grey: rgb(241, 241, 241);
+}
+body {
+  background-color: var(--background-grey);
+}
+
+.items-list .col-3 {
+  border: 4px solid var(--background-grey);
+  background-color: white;
+}
+
+.items-list .col-3:hover {
+  border: 4px solid lightgray;
+  cursor: pointer;
+}
+
+.item .price {
+  color: red;
+}
+
+button {
+  width: 100%;
+}
+
+img {
+  height: 200px;
+  width: 90%;
+  object-fit: scale-down;
+}
+
+.title {
+  height: 3em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
