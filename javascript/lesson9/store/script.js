@@ -38,7 +38,7 @@ $(function () {
 });
 
 function makeNewPage(item, $item) {
-  const url = new URL("../store/itempage.html", window.location.href);
+  const url = new URL("../item/index.html", window.location.href);
   url.searchParams.append("id", item.id);
   $item.find("a").attr("href", url);
 }
