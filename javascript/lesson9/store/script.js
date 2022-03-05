@@ -37,9 +37,10 @@ $(function () {
   });
 });
 
-function makeNewPage(item) {
-  const url = new URL('../store/itempage.html', 'http://baokhanhfontariel.github.io');
-  $(item).parent().attr("href", url);
+function makeNewPage(item, $item) {
+  const url = new URL("../store/itempage.html", window.location.href);
+  url.searchParams.append("id", item.id);
+  $item.find("a").attr("href", url);
 }
 
 const $item_list = $(".items-list .row");
@@ -47,7 +48,7 @@ const itemTemplateEl = $("template");
 
 function addItem(item) {
   const $item = $(itemTemplateEl.html());
-  console.log($item)
+  console.log($item);
   $item.attr("id", item.id);
   $item.find(".title").text(item.title);
   $item.find(".price").text(item.price);
@@ -61,11 +62,10 @@ function addItem(item) {
     editItem(item);
   });
   $item.find("a").on("click", function (e) {
-    e.preventDefault()
+    e.preventDefault();
     console.log("open link");
-    makeNewPage(this);
-    const href = $(this).parent().attr('href')
-    console.log(href)
+    makeNewPage(item, $item);
+    const href = $(this).attr("href");
     window.open(href, "_blank");
   });
   $item.appendTo($item_list);
@@ -158,13 +158,9 @@ function addItemAtHead(item) {
     editItem(item);
   });
   $item.find("a").on("click", function (e) {
-    e.preventDefault()
-    console.log("open link");
-    makeNewPage(this);
-    const href = $(this).parent().attr('href')
-    console.log(href)
+    e.preventDefault();
+    makeNewPage(item, $item);
+    const href = $(this).attr("href");
     window.open(href, "_blank");
   });
 }
-
-
