@@ -52,7 +52,7 @@ function showSlide(index) {
     $(smallImages[i]).removeClass("active");
   }
 
-  $(slides[index]).css("display", "block");
+  $(slides[index]).css("display", "flex");
   $(smallImages[index]).addClass("active");
   captionText.text($(smallImages[index]).attr("alt"));
   currIndex = index;

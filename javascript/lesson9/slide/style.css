@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -95,5 +97,5 @@
 
 .small-image img{
     height: 140px;
-    object-fit: cover;
+    object-fit: fill;
 }
