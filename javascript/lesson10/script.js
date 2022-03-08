@@ -29,7 +29,7 @@ let search = "cat";
 function getParam(search, page) {
   let param = {
     q: search,
-    page: 1,
+    page: page,
   };
 
   return $.param(param);
@@ -39,7 +39,7 @@ const $item_list = $(".item-list .row");
 let page = 1;
 
 function loadImages(param) {
-  console.log("load image page", page);
+  console.log("load image page", param);
   fetch(
     "https://pixabay.com/api/?key=26037716-84d57e3909d65193e7cd3af9e&" + param
   )
